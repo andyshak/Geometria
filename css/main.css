@@ -16,7 +16,7 @@ svg,
 video {
     vertical-align: middle;
 }
-fieldset {
+fieldset, ul {
     border: 0;
     margin: 0;
     padding: 0;
@@ -26,6 +26,9 @@ textarea {
 }
 a{
   text-decoration: none;
+}
+p{
+  font-family: geometria;
 }
 .center{
   text-align: center;
@@ -58,17 +61,12 @@ header .logo{
   padding-top: 30px;
   display: block;
 }
-
-
 header h1{
   font-size: 55px;
   font-family: geometria-bold;
-
-  background: linear-gradient(to right, #0f81f8, #2bbdf7);  /* подробнее про градиенты */
--webkit-background-clip: text;  /* подробнее про background-clip */
-color: transparent;
-  /*color: #0f81f8;
-background:  linear-gradient(to top, #fefcea, #f1da36);*/
+  background: linear-gradient(to right, #0f81f8, #2bbdf7);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 header .title{
   font-family: geometria;
@@ -97,7 +95,7 @@ header .title{
   background: #0f81f8;
   color: #fff;
 }
-.steps h2{
+.topic{
   font-size: 40px;
   font-family: geometria-bold;
   color: #0f81f8;
@@ -106,8 +104,7 @@ header .title{
 .steps p{
   margin: 0;
 }
-.steps .text-title{
-  font-family: geometria;
+.text-title{
   font-size: 16px;
   color: #08294c;
   padding-top:40px;
@@ -134,10 +131,9 @@ header .title{
   line-height: 445px;
 }
 .play{
-  white-space: nowrap;
+    white-space: nowrap;
     overflow: hidden;
 }
-
 .videos h2{
   font-size: 40px;
   font-family: geometria-bold;
@@ -147,7 +143,6 @@ header .title{
 .videos p{
   color: #fff;
   font-size: 16px;
-  font-family: geometria;
 }
 .videos .btn{
   background: #fff;
@@ -157,8 +152,13 @@ header .title{
 .clients{
   background: #fafafa;
 }
+.clients-list li{
+  display: inline-block;
+  padding: 45px 35px;
+}
+
 .clients-logo img{
-  width: 175px;
+  height: 35px;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
@@ -176,6 +176,82 @@ header .title{
   opacity: 1;
   transition: 1s linear;
 }
+.team{
+  background: #fcfcfc;
+}
+.members{
+  padding: 30px 30px 20px ;
+  background: #fff;
+  min-height: 363px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  margin-bottom: 150px;
+}
+.members .text-title{
+
+  text-align: justify;
+  line-height: 30px;
+  color: #08294c;
+}
+.name{
+  font-size: 20px;
+  font-family: geometria-bold;
+}
+
+.social-icon li{
+  display: inline-block;
+  padding-right: 20px;
+}
+.contact{
+  background: url(../img/contact-bg.jpg) repeat-x;
+  min-height: 695px;
+  padding-top: 70px;
+  color: #fff;
+
+
+}
+.contact h2{
+  font-size: 40px;
+  font-family: geometria-bold;
+  margin: 0;
+}
+.feedback{
+  width: 35%;
+  margin: 0 auto;
+}
+.form input[type=text],.form input[type=email], .form textarea{
+	width: 500px;
+	font-size: 16px;
+  color: #fff;
+  background-color: transparent;
+  border:none;
+  border-bottom:1px solid #fff;
+  padding: 10px 0;
+  margin: 15px 0;
+}
+.form input::-moz-placeholder, .form textarea::-moz-placeholder{color: #fff; font-size: 16px;}
+.form input::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder {color: #fff; font-size: 16px;}
+.form input:-ms-input-placeholder, .form textarea:-ms-input-placeholder {color: #fff;font-size: 16px;}
+.form input::-ms-input-placeholder, .form textarea::-ms-input-placeholder {color: #fff;font-size: 16px;}
+.form input::placeholder, .form textarea::placeholder {color: #fff;font-size: 16px;}
+.form-btn{
+      float: right;
+      text-transform: uppercase;
+      min-width: 200px;
+      padding: 20px 0;
+      background: #fff;
+      border: none;
+      color: #0f81f8;
+      border-radius: 30px;
+      -webkit-box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.1);
+      -moz-box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.1);
+      box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.1);
+}
+.checkbox{
+    float: left;
+    margin-top: 22px;
+}
+
 
 
 
